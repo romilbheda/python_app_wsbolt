@@ -53,8 +53,3 @@ stages:
     - upload: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
       displayName: 'Upload package'
       artifact: drop
-      
-    - task: WhiteSource@21
-      inputs:
-        cwd: '$(System.DefaultWorkingDirectory)'
-        projectName: 'wsboltproject1'
